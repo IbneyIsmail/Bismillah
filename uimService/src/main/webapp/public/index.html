@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="demo">
+	<head>
+		<title>Hello AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="hello.js"></script>
+	</head>
+
+	<body>
+	
+		<div ng-controller="Hello">
+		<input type="text" ng-model="input1">
+		<input type="text" ng-model="input2">
+			<p>The ID is {{value}}</p>
+			<input type="button" value="Add" ng-click="add()">
+			<input type="button" value="Sub" ng-click="sub()">
+			<input type="button" value="Div" ng-click="div()">
+			<input type="button" value="Mul" ng-click="mul()">
+		</div>
+		 
+	</body>
+</html>
